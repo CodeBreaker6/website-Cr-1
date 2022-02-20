@@ -1,0 +1,50 @@
+/* -------------------
+MADE BY ORON LANKRI
+------------------- */
+/* editable */
+@media(max-width: 930px){
+    html {
+        font-size: 9px;
+    }
+}
+
+@media(max-width: 500px){
+    html {
+        font-size: 8px;
+    }
+
+    #hero p {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (max-width: 660px){
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar ul {
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    #hero .hero-content {
+        padding-top: 5rem;
+    }
+
+    #treatments .items {
+        display: block;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #team .team-img {
+        display: none;
+    }
+
+    #map {
+        display: none;
+    }
+}

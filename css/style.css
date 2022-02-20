@@ -1,0 +1,302 @@
+/* -------------------
+MADE BY ORON LANKRI
+------------------- */
+/* editable */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary: #d1a296;
+    --secondary: white;
+    --primary-dark: #cc8d7d;
+    --dark: #333;
+    --light: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* 10px */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    line-height: 2.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem 0;
+    overflow: hidden;
+}
+
+.bg-light {
+    color: var(--dark);
+    background: var(--light);
+}
+
+.bg-dark {
+    color: var(--secondary);
+    background: var(--dark);
+}
+
+.bg-primary {
+    color: var(--secondary);
+    background: var(--primary);
+}
+
+.heading-l {
+    margin-bottom: .75rem;
+    padding: 0 2rem;
+    line-height: 1.1;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.heading-m {
+    margin-bottom: .75rem;
+    line-height: 1.1;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+.p-2 {
+    padding: 3.5rem;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+.py-2 {
+    padding: 2rem 0;
+}
+.py-3 {
+    padding: 3rem 0;
+}
+.py-4 {
+    padding: 4rem 0;
+}
+
+.pt-4 {
+    padding-top: 4rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 1rem 2.5rem;
+    color: var(--secondary);
+    border: none;
+    text-shadow: none;
+}
+
+.btn-dark {
+    background: var(--dark);
+}
+
+.btn:hover {
+    background: var(--primary-dark);
+}
+/* Navbar */
+#navbar {
+    color: var(--primary);
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+
+    position: static;
+    top: 0;
+    opacity: 0.9;
+    box-shadow: 0 20px 20px #0000003b;
+}
+
+#navbar h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a {
+    padding: 1.25rem;
+    margin: 0 0.5rem;
+    white-space: nowrap;
+}
+
+#navbar ul li a:hover {
+    background: var(--primary);
+    border-radius: 5px;
+    color: var(--secondary);
+}
+
+
+/* Hero */
+#hero {
+    background: url('../img/hero.jpg') no-repeat center center / cover;
+    height: 96vh;
+    color: var(--secondary);
+}
+
+#hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    text-shadow: 2px 2px 20px black;
+}
+
+#hero h1 {
+    font-size: 7rem;
+    font-weight: 400;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 60rem;
+    line-height:2;
+}
+
+/* Treatments */
+
+#treatments h2 {
+    padding: 2rem 1rem;
+    margin: 0 2rem;
+}
+
+#treatments .items {
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+}
+
+#treatments .items .item {
+    flex: 1;
+    padding: 2rem;
+}
+
+#treatments .items .item i {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 1.3rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+
+/* team */
+#team {
+    display: flex;
+}
+
+#team div {
+    flex: 1;
+}
+
+#team .team-img {
+    background: url(../img/team.jpeg) no-repeat center center / cover;
+    min-height: 40vh;
+}
+
+
+#team .team-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 3rem;
+    padding: 3rem 2rem;
+}
+
+#team p {
+    padding: 1rem 3rem 0 3rem;
+}
+
+/* Client */
+
+#clients .items {
+    display: flex;
+}
+
+#clients .items  img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+
+/* Contact Us */
+
+#contact {
+    display: flex;
+}
+
+#contact .contact-form {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input {
+    width: 100%;
+    padding: .5rem;
+    border: 0;
+}
+
+/* footer */
+
+#footer {
+    text-align: center;
+}

@@ -1,0 +1,167 @@
+<!-- -------------------
+MADE BY ORON LANKRI
+------------------- -->
+<!-- editable -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/aad9c446a7.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 940px)"
+            href="css/mobile.css"
+        />
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+        <link
+            href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+            rel="stylesheet"
+        />
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js">
+        </script><link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+        <title>Celestial | Massage Clinic</title>
+    </head>
+    <body id="home">
+        <nav id="navbar">
+            <h1 class="logo">
+                <i class="fas fa-clinic-medical"></i>
+                Celestial Massage Clinic
+            </h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#treatments">Treatments</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Hero image -->
+        <header id="hero">
+            <div class="hero-content">
+                <h1 class="heading-l">Celestial Therapy Treatments</h1>
+                <p class="p-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatem eveniet commodi at suscipit? Similique, ut?
+                </p>
+                <a href="#treatments" class="btn">Read More</a>
+            </div>
+        </header>
+        <!-- Section: Treatments -->
+        <section id="treatments" class="bg-light py-4">
+            <div class="container">
+                <h2 class="heading-l">Our Treatments</h2>
+                <div class="items">
+                    <div class="item">
+                        <i class="fab fa-envira fa-2x"></i>
+                        <div>
+                            <h3>Deep Tissue Massage</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Iste, tenetur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-hand-holding-medical fa-2x"></i>
+                        <div>
+                            <h3>Medical Massage Therapy</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Iste, tenetur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-spa fa-2x"></i>
+                        <div>
+                            <h3>Trigger Points Massage</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Iste, tenetur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Team -->
+        <section id="team">
+            <div class="team-img"></div>
+            <div class="team-text bg-dark">
+                <h2 class="heading-l">
+                    Our <span class="text-primary">Team</span>
+                </h2>
+                <p class="p-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facilis autem qui nam quidem, laboriosam doloremque eius similique. Corrupti, quidem maiores? A ducimus perferendis explicabo tempora eius asperiores eaque, eum at quasi exercitationem incidunt quam, voluptatem repellat officiis, error provident!
+                </p>
+            </div>
+        </section>
+        <!-- section: Sertified Supplier -->
+        <section id="clients" class="py-4">
+            <div class="container">
+                <h2 class="heading-l">
+                    <span class="text-primary">Certified </span>Treatments Supplier
+                </h2>
+                <div class="items pt-4">
+                    <div><img src="./img/client1.png" alt="Client 1"></div>
+                    <div><img src="./img/client2.png" alt="Client 2"></div>
+                    <div><img src="./img/client3.png" alt="Client 3"></div>
+                    <div><img src="./img/client4.png" alt="Client 4"></div>
+                    <div><img src="./img/client5.png" alt="Client 5"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: contact -->
+        <section id="contact">
+            <div class="contact-form bg-primary p-2">
+                <h2 class="heading-m">Contact Us</h2>
+                <p>Contact us using the form below</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label><input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label><input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label><input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message Contact</label><input type="text" name="message" id="message">
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-dark" />
+                </form>
+            </div>
+            <div id="map" style="width: 70vw"></div>
+            <script>
+                const cords = [34.771384, 32.062997];
+                mapboxgl.accessToken =
+                    'pk.eyJ1Ijoib3JvbjQ0MzUiLCJhIjoiY2t6cmhraWgwMTVvNzJycGUza2o3Yml1eSJ9.MnuwrQZkfuPNp-SIAI-HKA';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/streets-v11',
+                    center: cords,
+                    zoom: 12,
+                });
+                const popup = new mapboxgl.Popup({ maxWidth: '170px' }).setText(
+                    'Celestial Massage Clinic, Rothschild Blvd 22, Tel-Aviv, Israel'
+                );
+                const marker1 = new mapboxgl.Marker()
+                    .setLngLat(cords)
+                    .setPopup(popup)
+                    .addTo(map);
+
+                marker1.togglePopup();
+            </script>        
+        </section>
+        <footer id="footer" class="bg-dark py-1">
+            <div class="container">Copyright &copy; 2022, Celestial Massage Clinic</div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
